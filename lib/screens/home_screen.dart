@@ -1,5 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:customers/screens/sellerdetails_screen.dart';
+// import 'package:customers/screens/sellerdetails_screen.dart';
 import 'package:flutter/material.dart';
 
 // In HomeScreen.dart
@@ -112,19 +112,19 @@ class CompanyCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => SellerDetailsScreen(
-              companyId: companyId,
-              imageUrl: imageUrl ?? '', // Provide a default value if null
-              name: name ?? '', // Provide a default value if null
-              location: location ?? '', // Provide a default value if null
-              transportfee: transportfee ?? '',
-              arrivalTime: arrivalTime ?? '',
-            ),
-          ),
-        );
+        // Navigator.push(
+        //   context,
+        //   MaterialPageRoute(
+        //     builder: (context) => SellerDetailsScreen(
+        //       companyId: companyId,
+        //       imageUrl: imageUrl ?? '', // Provide a default value if null
+        //       name: name ?? '', // Provide a default value if null
+        //       location: location ?? '', // Provide a default value if null
+        //       transportfee: transportfee ?? '',
+        //       arrivalTime: arrivalTime ?? '',
+        //     ),
+        //   ),
+        // );
       },
       child: Card(
         elevation: 2.0,
